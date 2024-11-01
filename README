@@ -27,7 +27,7 @@ Sommaire :
         	                 Michel SALVADORI
 
 	OpenGLavity est fourni avec ABSOLUMENT AUCUNE GARANTIE; pour les
-	details voir COPYING. Ceci est un logiciel libre, et vous êtes libre de le
+	details voir COPYING. Ceci est un logiciel libre, et vous Ãªtes libre de le
 	redistribuer sous certaines conditions, voir COPYING pour les details.
 
   2. Buts et principes
@@ -56,17 +56,17 @@ Sommaire :
 		Y  : coordonnee du corps en Y
 		Z  : coordonnee du corps en Z
 		M  : masse du corps
-		D  : diamètre du corps
+		D  : diamÃ¨tre du corps
 		VX : celerite du corps en X
 		VY : celerite du corps en Y
 		VZ : celerite du corps en Z
 		C  : couleur du corps
 
   3. Utilisation
-	il vous faudras glut ( http://www.opengl.org/developers/documentation/glut/index.html ) et éventuellement glui ( http://www.cs.unc.edu/~rademach/glui/ )
+	il vous faudras glut ( http://www.opengl.org/developers/documentation/glut/index.html ) et Ã©ventuellement glui ( http://www.cs.unc.edu/~rademach/glui/ )
 
 	3.1. Compilation
-		(sous windows, vous utilisez le projet MSVC++ 6 et puis vous vous débrouillez avec :p)
+		(sous windows, vous utilisez le projet MSVC++ 6 et puis vous vous dÃ©brouillez avec :p)
 		- editez le fichier config.h afin de fixer certaines options (GLUT & GLUI)
 		- make
 		- make run-gui pour voir si ca marche
@@ -74,17 +74,18 @@ Sommaire :
 	3.2. Options de lancement
 		OpenGLavity [options]
 			-v --version :
-				 affiche le numÚro de version
+				 affiche le numÃšro de version
 			-h --help :
 				 ce que vous etes en train de lire
 			-i --input-file :
-				 fichier (.unv) Ó ouvrir (indispensable)
+				 fichier (.unv) Ã“ ouvrir (indispensable)
 			-o --output-file :
-				 fichier (.unv) Ó (Úventuellement) Úcrire
-			-t --duration :
-				 fixer un temps d'ÚxÚcution limitÚ en secondes
+				 fichier (.unv) Ã“ (Ãšventuellement) Ãšcrire
+                        -t --duration :
+				 the scale of display, negative means neglect relativity effects.
 			-n --iterations :
-				 fixer un nombre fini d'utÚrations Ó calculer
+				 the integration steps in 1 second, less than 1 means is integration steps 
+                                 1/iterations seconds. negative means iterations seconds without show.
 			-x --glut-interface :
 				 lancer l'interface OpenGL
 			-u --glui-interface :
@@ -96,7 +97,7 @@ Sommaire :
 			./OpenGLavity -i universes/good.unv -u
 
 	3.3. GUI
-		J'ai besoin d'expliquer ça ?! ;-)
+		J'ai besoin d'expliquer Ã§a ?! ;-)
 
   4. Epilogue
 		(plus tard)
